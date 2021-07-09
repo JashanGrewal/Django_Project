@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head> Labourer</head>
+	<div>
+		<body>
+			<form action=" " method ="post">
+				{% csrf_token %}
+				{{ form.as_p }}
+			Enter Your Pincode:
+			<input type="text" max=6 name='pincode'>
+			Enter the no. of labours required:
+			<input type="text" max=2 name='req_labour'>
+			<input type = "submit" value="Search">
+			</form>
+			<ul>
+				{% for i in lab %}
+					<li>{{i}}</li>
+				{% endfor %}
+				
+			</ul>
+			<ul>
+				{% for q in pinn %}
+                                        <li>{{q}}</li>
+                                {% endfor %}
+			</ul>
+			<ul>
+                                {% for r in namm %}
+                                        <li>{{r}}</li>
+                                {% endfor %}
+                        </ul>
+
+		</body>
+	</div>
+</html>
+
+

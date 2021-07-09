@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Contractor</h2>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+ Name:
+  <input type="text" name="name" maxlength="30">
+  <br>
+ Mobile No.:
+ <input type="tel" name="contactnumber" maxlength = "10">
+<br>
+Gender:
+<input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other 
+<br>
+Address:
+<input type="text" name="address" maxlength="60">
+<br>
+State:
+<select name="state">
+    <option value="Punjab">Punjab</option>
+    <option value="Haryana">Haryana</option>
+     </select>
+     <br>
+      City:
+<select name="city">
+    <option value="ludhiana">Ludhiana</option>
+    <option value="patiala">Patiala</option>
+     </select>
+     <br>
+ Pincode:
+ <input type="tel" name="pincode" maxlength = "6">
+<br><br>
+  <input type="submit" value="Submit">
+
+</form> 
+</body>
+</html>

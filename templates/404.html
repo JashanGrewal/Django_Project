@@ -1,0 +1,27 @@
+{% extends 'baseforapp.html' %}
+{% load staticfiles %}
+{% block title%} Labour {% endblock %}
+{% block style %}
+.footer {
+position: fixed;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2.5rem;style="margin-top:95px"
+background-color: #efefef;
+}
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top:70px">
+	<div class="row">
+		<div class="text-muted">
+			<div class="alert alert-warning">
+			<h2>404-Page Not Found</h2>
+			</div>
+			<strong> The page doesn't exist..</strong>
+		</div>
+	</div>
+</div>
+{% endblock %}
